@@ -1,0 +1,327 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1680500190.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "uuid",
+    "display",
+    "gender",
+    "age",
+    "birthdate",
+    "birthdateEstimated",
+    "dead",
+    "deathDate",
+    "causeOfDeath",
+    "preferredName",
+    "preferredAddress",
+    "attributes",
+    "voided",
+    "deathdateEstimated",
+    "birthtime",
+    "links",
+    "resourceVersion"
+  ],
+  "properties": {
+    "uuid": {
+      "$id": "#root/uuid",
+      "title": "Uuid",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "e262e35e-f75e-487b-8a8b-5858759405d2"
+      ],
+      "pattern": "^.*$"
+    },
+    "display": {
+      "$id": "#root/display",
+      "title": "Display",
+      "type": "number",
+      "default": "",
+      "examples": [
+        "Baks AlotOFBs"
+      ],
+      "pattern": "^.*$"
+    },
+    "gender": {
+      "$id": "#root/gender",
+      "title": "Gender",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "M"
+      ],
+      "pattern": "^.*$"
+    },
+    "age": {
+      "$id": "#root/age",
+      "title": "Age",
+      "type": "integer",
+      "examples": [
+        22
+      ],
+      "default": 0
+    },
+    "birthdate": {
+      "$id": "#root/birthdate",
+      "title": "Birthdate",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "2000-10-10T00:00:00.000+0000"
+      ],
+      "pattern": "^.*$"
+    },
+    "birthdateEstimated": {
+      "$id": "#root/birthdateEstimated",
+      "title": "Birthdateestimated",
+      "type": "boolean",
+      "examples": [
+        false
+      ],
+      "default": true
+    },
+    "dead": {
+      "$id": "#root/dead",
+      "title": "Dead",
+      "type": "boolean",
+      "examples": [
+        false
+      ],
+      "default": true
+    },
+    "deathDate": {
+      "$id": "#root/deathDate",
+      "title": "Deathdate",
+      "type": "null",
+      "default": null
+    },
+    "causeOfDeath": {
+      "$id": "#root/causeOfDeath",
+      "title": "Causeofdeath",
+      "type": "null",
+      "default": null
+    },
+    "preferredName": {
+      "$id": "#root/preferredName",
+      "title": "Preferredname",
+      "type": "object",
+      "required": [
+        "uuid",
+        "display",
+        "links"
+      ],
+      "properties": {
+        "uuid": {
+          "$id": "#root/preferredName/uuid",
+          "title": "Uuid",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "3dfcef53-8af9-4591-8b86-4f6dc68f1843"
+          ],
+          "pattern": "^.*$"
+        },
+        "display": {
+          "$id": "#root/preferredName/display",
+          "title": "Display",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "Baks AlotOFBs"
+          ],
+          "pattern": "^.*$"
+        },
+        "links": {
+          "$id": "#root/preferredName/links",
+          "title": "Links",
+          "type": "array",
+          "default": [],
+          "items":{
+            "$id": "#root/preferredName/links/items",
+            "title": "Items",
+            "type": "object",
+            "required": [
+              "rel",
+              "uri"
+            ],
+            "properties": {
+              "rel": {
+                "$id": "#root/preferredName/links/items/rel",
+                "title": "Rel",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "self"
+                ],
+                "pattern": "^.*$"
+              },
+              "uri": {
+                "$id": "#root/preferredName/links/items/uri",
+                "title": "Uri",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "http://codefish.ninja/openmrs/ws/rest/v1/person/e262e35e-f75e-487b-8a8b-5858759405d2/name/3dfcef53-8af9-4591-8b86-4f6dc68f1843"
+                ],
+                "pattern": "^.*$"
+              }
+            }
+          }
+
+        }
+      }
+    }
+  ,
+    "preferredAddress": {
+      "$id": "#root/preferredAddress",
+      "title": "Preferredaddress",
+      "type": "object",
+      "required": [
+        "uuid",
+        "display",
+        "links"
+      ],
+      "properties": {
+        "uuid": {
+          "$id": "#root/preferredAddress/uuid",
+          "title": "Uuid",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "87d903f3-6821-43a8-899a-1fa49ad74253"
+          ],
+          "pattern": "^.*$"
+        },
+        "display": {
+          "$id": "#root/preferredAddress/display",
+          "title": "Display",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "5555 w LLLL"
+          ],
+          "pattern": "^.*$"
+        },
+        "links": {
+          "$id": "#root/preferredAddress/links",
+          "title": "Links",
+          "type": "array",
+          "default": [],
+          "items":{
+            "$id": "#root/preferredAddress/links/items",
+            "title": "Items",
+            "type": "object",
+            "required": [
+              "rel",
+              "uri"
+            ],
+            "properties": {
+              "rel": {
+                "$id": "#root/preferredAddress/links/items/rel",
+                "title": "Rel",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "self"
+                ],
+                "pattern": "^.*$"
+              },
+              "uri": {
+                "$id": "#root/preferredAddress/links/items/uri",
+                "title": "Uri",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "http://codefish.ninja/openmrs/ws/rest/v1/person/e262e35e-f75e-487b-8a8b-5858759405d2/address/87d903f3-6821-43a8-899a-1fa49ad74253"
+                ],
+                "pattern": "^.*$"
+              }
+            }
+          }
+
+        }
+      }
+    }
+  ,
+    "attributes": {
+      "$id": "#root/attributes",
+      "title": "Attributes",
+      "type": "array",
+      "default": []
+    },
+    "voided": {
+      "$id": "#root/voided",
+      "title": "Voided",
+      "type": "boolean",
+      "examples": [
+        false
+      ],
+      "default": true
+    },
+    "deathdateEstimated": {
+      "$id": "#root/deathdateEstimated",
+      "title": "Deathdateestimated",
+      "type": "boolean",
+      "examples": [
+        false
+      ],
+      "default": true
+    },
+    "birthtime": {
+      "$id": "#root/birthtime",
+      "title": "Birthtime",
+      "type": "null",
+      "default": null
+    },
+    "links": {
+      "$id": "#root/links",
+      "title": "Links",
+      "type": "array",
+      "default": [],
+      "items":{
+        "$id": "#root/links/items",
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "rel",
+          "uri"
+        ],
+        "properties": {
+          "rel": {
+            "$id": "#root/links/items/rel",
+            "title": "Rel",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "self"
+            ],
+            "pattern": "^.*$"
+          },
+          "uri": {
+            "$id": "#root/links/items/uri",
+            "title": "Uri",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "http://codefish.ninja/openmrs/ws/rest/v1/person/e262e35e-f75e-487b-8a8b-5858759405d2"
+            ],
+            "pattern": "^.*$"
+          }
+        }
+      }
+
+    },
+    "resourceVersion": {
+      "$id": "#root/resourceVersion",
+      "title": "Resourceversion",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "1.11"
+      ],
+      "pattern": "^.*$"
+    }
+  }
+}
