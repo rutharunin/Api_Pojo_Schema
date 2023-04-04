@@ -12,10 +12,9 @@ import tests.pojo.serializedPojo.AddressPojo;
 import tests.pojo.serializedPojo.NamePojo;
 import tests.pojo.serializedPojo.PostPersonPoJo;
 
-import java.io.InputStream;
 import java.util.*;
 
-public class PostPerson {
+public class PostPersonTest {
 
     public String requestBody;
 

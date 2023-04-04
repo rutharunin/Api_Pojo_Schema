@@ -6,9 +6,9 @@ import org.junit.Test;
 
 import java.io.InputStream;
 
-public class CreatePersonJsonSchema {
+public class CreatePersonJsonSchemaTest {
 
-    PostPerson postPerson=new PostPerson();
+    PostPersonTest postPerson=new PostPersonTest();
     @Test
     public void postSchemaTest() throws JsonProcessingException {
 
